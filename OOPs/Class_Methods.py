@@ -5,6 +5,9 @@ class MyClass:
     def change_var(self, new_value:int):
         MyClass.my_var= new_value
 
+    def __init__(self): #dunder or magic method
+        print("Hello World")
+
     @classmethod #class method takes cls as the first parameter
     def _class_method(cls, new_value:int):
         cls.my_var= new_value
