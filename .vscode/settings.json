@@ -6,6 +6,7 @@
         "mydecorator",
         "myfunction",
         "pydantic",
+        "pytest",
         "seperator",
         "Wipro"
     ]
