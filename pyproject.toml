@@ -1,7 +1,7 @@
 [project]
 name = "folder-python"
 version = "0.1.0"
-description = "Add your description here"
+description = "Runnable lessons in Python and introductory data engineering"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

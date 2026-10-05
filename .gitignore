@@ -8,3 +8,5 @@ wheels/
 
 # Virtual environments
 .venv
+data_engineering/*.sqlite3
+data_engineering/pandas/output/
