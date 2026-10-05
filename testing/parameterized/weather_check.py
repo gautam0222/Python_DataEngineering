@@ -8,4 +8,5 @@ def weather_check(temp:float)->str:
     else:
         return "It's hot outside!"
     
-print(weather_check(10))
+if __name__ == "__main__":
+    print(weather_check(10))
