@@ -208,34 +208,3 @@ flowchart TD
 
 The current pytest suite exercises the Python testing lessons. It does not yet contain dedicated tests for the batch pipeline, and SQLite is being used as a teaching target rather than a distributed warehouse.
 
-## Test suite
-
-The lessons under `testing/` demonstrate ordinary assertions, parameterized cases, object methods, expected exceptions, and mocking an HTTP client. Run all tests from the repository root:
-
-```shell
-uv run pytest -q
-```
-
-The mock lesson replaces `requests.get`, so it does not make a live HTTP request. The API notebook does make live requests in some cells.
-
-## Current scope and next topics
-
-This repository is an introduction, not a complete Python or data engineering curriculum. It currently covers core Python examples, OOP, basic concurrency, HTTP requests, validation, file formats, pytest, and a local batch ETL/SQLite flow.
-
-Natural next lessons would cover:
-
-- SQL joins, window functions, indexes, and database migrations.
-- API pagination, timeouts, retries, rate limits, and secret/configuration handling.
-- Pipeline-specific tests, richer data-quality checks, and structured run metadata.
-- Incremental ingestion, checkpoints, partitioning, and schema evolution.
-- Workflow orchestration, cloud object storage, Spark, and streaming systems.
-
-Those subjects require their own focused examples and, for some tools, external services. They are not represented here as already covered.
-
-## Repository conventions
-
-- Keep lesson paths lowercase and filenames in `snake_case`.
-- Keep reusable code free of work at import time; place demonstrations behind `if __name__ == "__main__":`.
-- Resolve bundled sample paths from the lesson file or expose a command-line option.
-- Keep real credentials out of source files and notebooks.
-- Prefer small examples that demonstrate one concept, with larger flows documented separately.
